@@ -18,7 +18,7 @@ public class WebServicesController
     @GetMapping("api/rest")
     public  String  takeRest()
     {
-        return "Rest is only necessary - Not a goal";
+        return "Rest is only necessary - Not the end goal";
     }
     
 }
