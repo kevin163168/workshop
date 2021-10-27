@@ -6,6 +6,7 @@
 package com.celestial.firstspringbootapp;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -17,9 +18,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WebController
 {
     @RequestMapping("hello")
-    public  String  helloHandler()
+    public  String  helloHandler(Model theModel)
     {
         System.out.println("Hello from Spring Controller...");
+        theModel.addAttribute("message", "Welcome to my world from SpringBoot in Netbeans");
         return "hello";
     }
     
