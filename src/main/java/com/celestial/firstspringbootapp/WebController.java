@@ -20,7 +20,7 @@ public class WebController
     @RequestMapping("hello")
     public  String  helloHandler(Model theModel)
     {
-        System.out.println("Hello from Spring Controller...");
+        System.out.println("Hello from Kevin...");
         theModel.addAttribute("message", "Welcome to my world from SpringBoot in Netbeans");
         return "hello";
     }
